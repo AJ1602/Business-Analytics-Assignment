@@ -14,3 +14,8 @@ SELECT AVG(total_fertility_rate), country_name as COUNTRY  FROM `bigquery-public
 WHERE year > 1980
 group by country_name
 LIMIT 1000
+Code 7
+SELECT avg(fertility_rate_30_34), country_name as COUNTRY FROM `bigquery-public-data.census_bureau_international.age_specific_fertility_rates` 
+where year > 1980
+group by country_name
+LIMIT 1000
