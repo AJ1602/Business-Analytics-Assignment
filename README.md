@@ -27,3 +27,7 @@ Code 9
 SELECT sum(sex_ratio_at_birth), country_name as COUNTRY FROM `bigquery-public-data.census_bureau_international.age_specific_fertility_rates`
 group by country_name
 LIMIT 500
+Code 10
+SELECT avg(sex_ratio_at_birth), year as YEAR FROM `bigquery-public-data.census_bureau_international.age_specific_fertility_rates`
+group by year
+LIMIT 750
